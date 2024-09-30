@@ -1,0 +1,53 @@
+import java.util.*;
+public class main{
+    public static boolean prime(int n)
+    {
+        if(n<=1)
+        return false;
+        for(int i=2;i<=Math.sqrt(n);i++)
+        {
+            if(n%i==0)
+            return false;
+        }
+        return true;
+    }
+   public static int prev(int n)
+    {
+        n=n-1;
+        while(true)
+        {
+            if(prime(n))
+            return n;
+            else
+            n--;
+        }
+    }
+    public static int next(int n)
+    {
+        n=n+1;
+        while(true)
+        {
+            if(prime(n))
+            return n;
+            else
+            n++;
+        }
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int p=prev(n);
+        int nt=next(n);
+        if(n==0)
+        System.out.print(2);
+        else if(n==1) 
+        System.out.print(1);
+        else if(n-p>nt-n)
+        {
+            System.out.print(nt-n);
+        }
+        else
+        System.out.print(n-p);
+    }
+}

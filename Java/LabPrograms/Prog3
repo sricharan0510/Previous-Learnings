@@ -1,0 +1,35 @@
+import java.util.*;
+class labprogram3
+{
+    static void personalDetails(String n,int a,String ad){
+        System.out.println("Name : "+n);
+        System.out.println("Age : "+a);
+        System.out.println("Address : "+ad);
+    }
+    static void qualificationDetails(String q,String p,String i){
+        System.out.println("Qualification : "+q);
+        System.out.println("Year Passed : "+p);
+        System.out.println("Institution : "+i);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //personal details
+        System.out.println("Enter your name :");
+        String name = sc.nextLine();
+        System.out.println("Enter your age :");
+        String age = sc.nextLine();
+        System.out.println("Enter your address :");
+        sc.nextline();
+        String address = sc.nextLine();
+        //professional details
+        System.out.println("Enter your qualifications :");
+        String qualification = sc.nextLine();
+        System.out.println("Enter your passing year ot passed year :");
+        String passingYear = sc.nextLine();
+        System.out.println("Enter your institution name :");
+        String institution = sc.nextLine();
+        personalDetails(name,age,address);
+        qualificationDetails(qualification,passingYear,institution);
+        
+    }
+}

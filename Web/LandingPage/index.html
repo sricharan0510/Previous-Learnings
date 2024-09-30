@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Stranger Talks</title>
+    <link rel="icon" type="image/x-icon"href="images/sricon.ico">
+    <style>
+        body{
+            background-image: url(images/bg2.jpg); 
+            background-color: white;
+            margin: 10px;
+            background: cover;
+        }
+          .navbar{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 15px;
+            padding-right: 15px;
+        } 
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            padding: 5px;
+
+        }
+         .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: inline-block;
+        }
+        .logo h1{
+            color: white;
+            font-size: 60px;
+        }
+        li{
+            display: inline-block;
+        }
+        li a{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        .menu{  
+            width: 450px;
+            height: 100px;
+            padding: 10px;
+            color: white;
+            align-items: right;
+            font-family: Comic sans-serif;
+            margin: 50px;
+        }
+        #start {
+            font-size: 40px;
+            margin-left: 70px;
+        }
+        .strimg {
+            height: 80px;
+            margin-right: 50px;
+            justify-content: right;
+            border-radius: 18px;
+        }
+        .in{
+            margin-left: 40px;
+        }
+        .btns {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.8;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btns:hover {opacity: 3}      
+        .btn {
+            background-color: #005234; 
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            opacity: 0.8;
+            font-size: 12px;
+        }
+        .btn:hover {opacity: 3}
+        .note {
+            margin-left: 50px;
+        }
+        .abt {
+            border: 2px solid black;
+            color: black;
+            align-items: center;
+            padding: 20px;
+        }
+        .contain {
+            display: grid;
+            align-items: center; 
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <h1 style="color: white,font-size 70px;">StrangR</h1>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                    <li><button class="btns">SignIn</button></li>
+                    <li><button class="btns">SignUp</button></li> 
+                </ul>
+            </div>
+        </nav>
+        <div class="contain">
+            <div class="strimg">
+                <img src="images/Strangers.jpg">
+            </div>
+        <div class="menu">
+            <h1><b>Let's Talk with Stranger's</b></h1>
+            <p id="start">Get Started!</p>
+           <input type="text" placeholder="Email-Address" class="in"> 
+           <button class="btn">Register</button>
+           <p class="note">(Register With Your Email-Address)</p><br>
+           <div class="abt">
+            <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>For more info:</b></h2>
+            <h3>You can contact us in below social media platforms</h3>
+            <a href="#"><i class="fa fa-fw fa-facebook">:strangerTalksfacebook</i> </a><br>
+            <a href="#"><i class="fa fa-fw fa-twitter"></i>stranger_talks</a><br>
+            <a href="#"><i class="fa fa-fw fa-instagram"></i>stranger_talks</a>
+           </div>
+        </div>
+        </div>
+        </div>
+    </div>
+      </div> 
+</body>
+</html>  
+
+

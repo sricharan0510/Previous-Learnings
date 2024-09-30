@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class dis
+{
+    static int len(int n)
+    {
+        int c=0;
+        while(n>0)
+        {
+            n/=10;
+            c++;
+        }
+        return c;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp=n,r=0,c=0;
+        int s=0;
+        int k=n;
+        for(int i=len(k);i>=1;i--)
+        {
+            r=temp%10;
+            s=s+(int)Math.pow(r,i);
+            temp/=10;
+        }
+        if(n==s)
+        System.out.print("True");
+        else
+        System.out.print("False");
+    }
+}

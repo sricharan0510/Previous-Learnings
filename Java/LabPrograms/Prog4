@@ -1,0 +1,27 @@
+class lp4
+{
+    lp4()
+    {
+        System.out.println("No parameters or default constructor");
+    }
+    lp4(int a,int b)
+    {
+        System.out.println("this is 2 parameterized constructor");
+        System.out.println(a+"+"+b+"="+(a+b));
+    }
+    lp4(double a,double b,int c)
+    {
+        System.out.println("this is 3 parameterized constructor");
+        System.out.println(a+"+"+b+"+"+c+"="+(a+b+c));
+    }
+    lp4(int a,double b){
+        System.out.println("this is 2 parameterized constructor with different datatypes");
+        System.out.println(a+"+"+b+"="+(a+b));
+    }
+    public static void main(String[] args) {
+        lp4 obj1 = new lp4(6,11.3);
+        lp4 obj2 = new lp4(9.7, 10.4,5);
+        lp4 obj3 = new lp4(5, 3);
+        lp4 obj4 = new lp4();
+    }
+}

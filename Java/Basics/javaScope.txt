@@ -1,0 +1,35 @@
+Scope of the variable:
+class
+member variables --> attributes
+member functions --> actions/behaviour
+prototype
+
+1.loacal variables : Declared inside the class
+  scope : local/block
+  block scope is a scope of variabble that we can access that particular variable in that block only.we cannot   have a chance to access outside of a block.
+
+
+2.instance variables : which changes from one thing to another ex : name age
+  Scope of instance variables is inside class but out of method without a static keyword
+  instance of the class only (Object of class)
+  you cannot access instace variable by class name
+	How to create a instance variale ?
+	Ans. syntax:
+		new classname();
+		Instance generally will be stored in an object of the class. 
+		Example:
+		class cat {
+			String name;
+			int age;
+			static String species = "Carnivore";
+			}
+		class demo {
+			public static void main (String[] args){
+				cat c1 = new cat();
+				cat c2 = new cat();
+				cat.species;
+			}
+
+		}
+
+

@@ -1,0 +1,38 @@
+import java.util.*;
+public class ElectricityBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int unitsConsumed = sc.nextInt();
+        double costPerUnit = 0;
+        if(unitsConsumed<199){
+            costPerUnit = 1.20;
+        }
+        else if(unitsConsumed>=200 && unitsConsumed<400){
+            costPerUnit = 1.40;
+        }
+        else if(unitsConsumed>=400 && unitsConsumed<600){
+            costPerUnit = 1.60;
+        }
+        else if(unitsConsumed>=600 && unitsConsumed<800){
+            costPerUnit = 1.80;
+        }
+        else {
+            costPerUnit = 2.00;
+        }
+        double electricBill = unitsConsumed*costPerUnit;
+        double surchargeAdded=0;
+        if(electricBill>400){
+            surchargeAdded = electricBill*0.15;
+        }
+        double totalAmount = electricBill+surchargeAdded;
+        System.out.printf("Units Consumed: %d",unitsConsumed);
+        System.out.println();
+        System.out.printf("Cost per Unit: %.2f",costPerUnit);
+        System.out.println();
+        System.out.printf("Bill: %.2f",electricBill);
+        System.out.println();
+        System.out.printf("Surcharge: %.2f",surchargeAdded);
+        System.out.println();
+        System.out.printf("Total Amount: %.2f",totalAmount);
+    }
+}

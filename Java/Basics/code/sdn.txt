@@ -1,0 +1,75 @@
+#include<stdio.h>
+int main()
+{
+    int m,n,temp,r=0,c;
+    scanf("%d%d",&m,&n);
+    for(int i=m;i<=n;i++)
+    {
+        temp=i;
+        int d=0;
+        while(i>0)
+        {
+            i/=10;
+            d++;
+        }
+        c=0;
+        int k=temp;
+         while(k!=0)
+        {
+            r=k%10;
+            if(temp%r==0)
+            {
+                c++;
+            }
+            k/=10;
+        }
+        if(d==c)
+        printf("%d",temp);
+    }
+    
+}
+
+
+import java.util.Scanner;
+public class self
+{
+    static boolean sdn(int n)
+    {
+        int temp=n,k=n,r=0,c=0,d=0;
+        while(n!=0)
+        {
+            n/=10;
+            d++;
+        }
+        while(k!=0)
+        {
+            r=k%10;
+            if(r!=0)
+            {
+                if(temp%r==0)
+                {
+                    c++;
+                }
+                
+            }
+            k/=10;
+        }
+        if(c==d) return true;
+        else return false;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        for(int i=m;i<=n;i++)
+        {
+            if(sdn(i))
+            {
+                System.out.print(i+" ");
+            }
+        }
+        
+    }
+} 
+}

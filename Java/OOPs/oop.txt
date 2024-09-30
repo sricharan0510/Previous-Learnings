@@ -1,0 +1,101 @@
+Some Commonly Used OOP's Terms:
+class
+object
+instance
+method 
+overeiding
+overloding
+static/class variable
+instance variable
+constructors
+modifiers
+access modifiers
+non-access modifiers
+abstract class
+interface
+this keyword
+super keyword
+Abstaraction
+Encapsulation
+Inheritance
+Polymorphism
+package
+scope of variable
+method signature
+annotation
+exception 
+compparator
+paramatric constructor.
+
+
+
+Pillars of OOPs  
+Abstaraction ----> Showing Essential data and hiding trivial and non trivial data
+Encapsulation/Data Hiding ----> Wrapping up data under a single unit.
+Inheritance  ----> Obtaining the features from another class 
+Polymorphism  ----> Ability to appers in many forms.
+                                      1.Method Overloading : Compile time
+                                       2.Method Overriding : Run-Time 
+
+
+
+
+Static (vs) Non-Static
+Static ---> No Instance dependency and directly accessed using class.
+Non-Static ---> Instance dependency and can only be accessed using objects.
+
+
+POLYMORPHISM:
+In java you can write methods with same name and different signatures 
+Method overloading is performed in 2 ways:
+1.By changing the num of parameters.
+2.By changing the type of parameters.
+Method-overloading cannot be performed by changing return type of methods.
+
+
+Generic Method : 
+Syntax -->   <T> return_type Method_name(T parameters)
+             {
+                do stuff;
+             }
+
+
+Constructor in java:
+1.Constructor is a special method in java which is Used to construct a object of class.
+ constructor means assiging values to instance variable.
+2.Constructor will allow us to send data while creating a instance of a class.
+3.Constructor will be invoked/called upon creation on each instance.
+4.There are 2 different types of constructors in java.
+5.If no constructor is written in class then java Compiler will always add a default constructor.
+
+Rules for creating constructor:
+1.constructor name should be same as class name.
+2.constructor is a method but it should not contain any explicit return type.
+3.constructor can be written with or without parameters.
+4.A constructor without parameters is called default or no_arg constructor.
+5.A constructor with parameters are called paramatric constructor.
+6.Constructor are always called upon above instance creation.
+
+Access/Visilbility modifiers in java:
+There are 3 visibility modifiers 
+1.Public
+2.Private
+3.Protected
+Visilbility modifiers will decide the visibility or access to a field or class or method in java.
+They are used in the process of Encapsulation.
+Public ---> Universal access :- Can be accessed within the package and outside of the package.
+Private ---> Resteicted access :-Can be accessed within the class.
+Protected ---> Resteicted access :- Can be accessed within the package and within the sub/derived/child classes outside the package.
+default ---> package-Private access.
+can be accessed within the current package   
+_________________________________________________________________________________________________________________________________________
+|   modifier/Scope   |    within class    within package   outside the package but within subclass    outside the package in all classes |
+|____________________|___________________________________________________________________________________________________________________|
+|   1.Public                                                                                                                             
+|   2.Private                                                                                                                        
+|
+|
+|_____________________________________________________________________________________________________________________________________
+
+
+

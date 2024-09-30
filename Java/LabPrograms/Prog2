@@ -1,0 +1,42 @@
+// class labprogram2
+// {
+//     static boolean isPrime(int n)
+//     {
+//         if(n<=1)
+//         return false;
+//         for(int i=2;i<=Math.sqrt(n);i++){
+//             if(n%i==0)
+//             return false;
+//         }
+//         return true;
+//     }
+//     public static void main(String[] args) {
+//         for(int i=1;i<=100;i++)
+//         {
+//             if(isPrime(i))
+//             System.out.print(i+" ");
+//         }
+//     }
+// }
+import java.util.*;
+public class Prog2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        int e = sc.nextInt();
+        for(int i=s;i<=e;i++)
+        {
+            if(i<=1)
+                continue;
+                boolean isprime = true;
+                for(int j=2;j<=i/2;j++){
+                    if(i%j==0)
+                        isprime=false;
+                    break;
+                }
+            if(isprime){
+                System.out.print(i+" ");
+            }
+        }
+    }
+}

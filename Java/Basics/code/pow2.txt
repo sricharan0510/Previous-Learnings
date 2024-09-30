@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int power(int n) {
+    int c = 0;
+    while (n % 2 == 0) {
+        n /= 2;
+    }
+    if (n == 1) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+int next(int n) {
+    int next = n + 1;
+    int nextP = 0;
+    while (1) {
+        if (power(next)) {
+            nextP = next;
+            break;
+        }
+        next++;
+    }
+    return nextP;
+}
+
+int prev(int n) {
+    int prev = n - 1;
+    int preP = 0;
+    while (1) {
+        if (power(prev)) {
+            preP = prev;
+            break;
+        }
+        prev--;
+    }
+    return preP;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (power(n)) {
+        printf("0");
+    } else {
+        if ((next(n) - n) > (n - prev(n))) {
+            printf("%d", n - prev(n));
+        } else {
+            printf("%d", next(n) - n);
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,21 @@
+class LabProg1
+{
+    static byte b;
+    static short s;
+    static int i;
+    static long l;
+    static float f;
+    static double d;
+    static char c;
+    static boolean bo; 
+    public static void main(String[] args) {
+        System.out.println("Initial values of byte is : "+b);
+        System.out.println("Initial values of short is : "+s);
+        System.out.println("Initial values of int is : "+i);
+        System.out.println("Initial values of long is : "+l);
+        System.out.println("Initial values of float is : "+f);
+        System.out.println("Initial values of double is : "+d);
+        System.out.println("Initial values of char is : "+c);
+        System.out.println("Initial values of boolean is : "+bo);
+    }
+}

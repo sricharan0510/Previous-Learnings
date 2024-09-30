@@ -1,0 +1,38 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Portal</h1>
+    <div id="signupForm" class="form-container">
+      <h2>Sign Up</h2>
+      <input type="text" id="signupUsername" placeholder="Username">
+      <input type="password" id="signupPassword" placeholder="Password">
+      <button onclick="signup()">Sign Up</button>
+    </div>
+    <div id="loginForm" class="form-container">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="applyForm" class="form-container">
+      <h2>Apply for Job</h2>
+      <input type="text" id="jobTitle" placeholder="Job Title">
+      <input type="text" id="jobCompany" placeholder="Company">
+      <input type="text" id="jobLocation" placeholder="Location">
+      <textarea id="jobDescription" placeholder="Description"></textarea>
+      <button onclick="apply()">Apply</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
